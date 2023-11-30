@@ -43,7 +43,7 @@ During data preprocessing 4187 images of both normal and pneumonia classes are i
 ## 7. Model Development (CNN)
 A basic CNN model is developed with essential layers. A sequential model in instantiated with a basic convolution layer with a relu activation function and a Max Pooling layer with a pool size of 2X2 and a flatten layer is added to transform the 2D matrix data to a vector and a fully cinnected layer with 128 unite and ReLu activation and finally an output layet with a single unit and a sigmoid classifier for binary classification. The model is compiled with an Adam optimizer and binary crossentropy loss. Training is performed on the training set with validation on a subset.
 
-The results of the basic CNN model on the date are:
+The results of the basic CNN model on the data are:
 ```
 Model: "cnn_model"
 _________________________________________________________________
@@ -78,7 +78,7 @@ Epoch 5/5
 ```
 
 ## 8. Model Improvement (CNN with Data Augmentation)
-Data is augmented by rotating images up to 0.2 degrees for enhanced model generalisation.Dropout is added for regularization, and the model is recompiled and trained with early stopping. The results ar given below:
+Data is augmented by rotating images up to 0.2 degrees for enhanced model generalisation.Dropout is added for regularization, and the model is recompiled and trained with early stopping. The results are:
 ```
 Model: "cnn_model_updated"
 _________________________________________________________________
@@ -167,10 +167,8 @@ Epoch 4/5
 66/66 [==============================] - ETA: 0s - loss: 0.5461 - accuracy: 0.7421Restoring model weights from the end of the best epoch: 1.
 66/66 [==============================] - 126s 2s/step - loss: 0.5461 - accuracy: 0.7421 - val_loss: 0.5453 - val_accuracy: 0.7426
 Epoch 4: early stopping
-![image](https://github.com/SrkPrasadChangala/pneumoniaDetection/assets/77905636/78ef50eb-e23a-4a7d-8300-ca5cd49a6b83)
-
 ```
-
+![image](https://github.com/SrkPrasadChangala/pneumoniaDetection/assets/77905636/78ef50eb-e23a-4a7d-8300-ca5cd49a6b83)
 ## 10. Model Evaluation
 The performance of both the CNN and ResNet models is evaluated on the test set, reporting test accuracy for each model. The results of evaluation of two models are given below:
 ```
