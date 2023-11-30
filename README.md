@@ -21,10 +21,20 @@ Images in test dataset
  	Normal Images: 234 	 Pneumonia Images: 390 
 
 ## 4. Visualization
-Random sample images from each class are visualized, offering a qualitative understanding of the data. Class distribution is also visualized using a bar chart.
+Random sample images from each class are visualized, offering a qualitative understanding of the data. 
+These are the sample visualizations of the x-ray data images used in the project.
+![image](https://github.com/SrkPrasadChangala/pneumoniaDetection/assets/77905636/b6be27d6-9e46-4863-b5cc-a0eb97b5e40f)
+![image](https://github.com/SrkPrasadChangala/pneumoniaDetection/assets/77905636/f8c6e256-97ea-4b3e-bbca-2305cf0a93ad)
+
+Class distribution is also visualized using a bar chart. It is as shown in the image given
+![image](https://github.com/SrkPrasadChangala/pneumoniaDetection/assets/77905636/fb9c8cab-f247-44f2-ad27-3206b3cb6d1a)
+As seen the dataset has a higher number of pneumonia images close to 4274 and lesser number of normal images which is close to 1583. Speaking in percentages, the dataset contains 72.9% of Pneumonia images and 27.1% of dataset contains normal images.
+
 
 ## 5. Image Size Analysis
-Histograms analyze image size distributions (width and height), and sample images with labels showcase the dataset's diversity.
+Histograms analyze image size distributions (width and height), and sample images with labels showcase the dataset's diversity. The histograms indicate that image widths and heights in the dataset are normally distributed, peaking around 1250 and 1000 pixels respectively, with few images exceeding 2500 pixels in either dimension. This suggests that standardizing image sizes to a common dimension like 256x256 pixels for model input might be appropriate, balancing detail retention with computational efficiency.
+![image](https://github.com/SrkPrasadChangala/pneumoniaDetection/assets/77905636/0370eaf5-459b-4b46-8356-182ca8ca0e27)
+
 
 ## 6. Data Preprocessing
 Directory paths, batch size, image size, and validation split are defined for data preprocessing. ImageDataGenerator is utilized for data augmentation and normalization.
